@@ -28,7 +28,7 @@ public class ReIdentifyTextEntity
         return entities.Select(entity => new ReIdentifyTextEntity
         {
             ProcessedText = entity.ProcessedText,
-            Text = entity.Text
+            Text = entity.Text!
         }).ToArray();
     }
 }
